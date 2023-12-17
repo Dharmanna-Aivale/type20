@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  box-shadow: 3px 3px 22px 2px black;
+}
+.navbar img {
+  height: 70px;
+  width: auto;
+  box-shadow: 3px 3px 5px 3px black;
+}
+.navbar .navbar-nav .nav-link {
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+}
+
+/* the middle content is started now */
+.backimg {
+  background-image: url("../image/banner.jpg");
+  box-shadow: 1px 3px 23px 9px black;
+}
+
+.linear {
+  background-image: linear-gradient(to right, orange, green, red);
+}
+
+#cdetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 70px;
+}
+
+#cdetails details {
+  width: 30%;
+}
+
+#cdetails details h3 {
+  font-weight: 600;
+  padding: 12px 0;
+}
+
+#cdetails details li i p {
+  margin-left: 10px;
+  margin-top: -20px;
+  font-size: 15px;
+}
+
+#regbtn {
+  background-image: linear-gradient(purple, red);
+}
+
+.map {
+  box-shadow: 3px 6px 10px 5px black;
+}
+
+/* the middle content is ended now */
+#footer {
+  background: blue;
+  box-shadow: 3px 3px 22px 2px black;
+}
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid black;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: white;
+}
+#footer .list-unstyled p {
+  color: white;
+}
+#footer .list-unstyled ul li {
+  color: white;
+}
+#footer .formargin p {
+  color: white;
+}
+#footer a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+#footer a:hover {
+  text-decoration: underline;
+  padding-left: 3px;
+  color: orangered;
+}
+
+@media (max-width: 767px) {
+  #footer h5 {
+    margin-top: 30px;
+    color: black;
+    border: hidden;
+  }
+  .backimg h1 {
+    color: green;
+    text-shadow: 2px 2px 2px black;
+    font-size: 40px;
+  }
+  #cdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 70px;
+  }
+  .map iframe {
+    margin: 10px 20px;
+    width: 200px;
+    height: 200px;
+  }
+  .font-weight-bold {
+    font-size: 5px;
+    font-weight: 100;
+  }
+}/*# sourceMappingURL=contact.css.map */

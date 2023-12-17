@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: thechinesefonts;
+  src: url("../image/osaka-re.ttf");
+}
+.navbar {
+  box-shadow: 3px 3px 22px 2px black;
+}
+.navbar img {
+  height: 70px;
+  width: auto;
+  box-shadow: 3px 3px 5px 3px black;
+}
+.navbar .navbar-nav .nav-link {
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+}
+
+.maincontent {
+  position: relative;
+  background-image: url(../image/backimag3.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.maincontent #fingerstrike {
+  font-family: thechinesefonts;
+  font-size: 60px;
+  color: white;
+  text-shadow: 2px 2px 2px green;
+}
+.maincontent .container-fluid #startnow {
+  padding: 10px 10px;
+  font-size: 25px;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px black;
+  margin-left: 114px;
+  box-shadow: 3px 4px 12px 2px black;
+  border-radius: 5px;
+}
+.maincontent .container-fluid h2 {
+  font-weight: 900;
+  color: white;
+  font-size: 70px;
+  margin-top: 20px;
+  text-shadow: 2px 2px 2px black;
+}
+.maincontent .container-fluid h3 {
+  font-weight: 900;
+  color: white;
+  margin-top: 20px;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px black;
+}
+@media (max-width: 768px) {
+  .maincontent {
+    background-image: url(../image/backimag6.jpg);
+  }
+}
+@media (max-width: 420px) {
+  .maincontent {
+    background-image: url(../image/backimag6.jpg);
+    width: 100vw;
+  }
+}
+.maincontent #theloginform {
+  border: 5px solid white;
+  border-radius: 14px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+}
+
+#footer {
+  background: blue;
+  box-shadow: 3px 3px 22px 2px black;
+}
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid black;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: white;
+}
+#footer .list-unstyled p {
+  color: white;
+}
+#footer .list-unstyled ul li {
+  color: white;
+}
+#footer .formargin p {
+  color: white;
+}
+#footer a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+#footer a:hover {
+  text-decoration: underline;
+  padding-left: 3px;
+  color: orangered;
+}
+
+@media (max-width: 767px) {
+  .maincls {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../image/backimge4.jpg");
+    width: 100vw;
+    height: 100vh;
+  }
+  .maincontent .container-fluid #startnow {
+    margin-right: 70px;
+    margin-left: 20px;
+    padding: -5px;
+  }
+  #footer h5 {
+    margin-top: 30px;
+    color: black;
+    border: hidden;
+  }
+  .maincontent .container-fluid h2 {
+    font-weight: 900;
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 2px black;
+  }
+}/*# sourceMappingURL=main.css.map */

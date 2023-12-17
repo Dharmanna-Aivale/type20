@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="javascript/index.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   
+    <style>
+        /* Custom CSS for the image */
+        .navbar img {
+            height: 70px;
+            width: auto; 
+        }
+    </style>
+</head>
+<body>
+
+<!-- header started -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <img src="image/typinglogo.jpg" alt="" class="theimage">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav font-weight-bold mr-5 ">
+        <a class="nav-link active mr-3 " href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link mr-3" href="other/about.html">About</a>
+        <a class="nav-link mr-3" href="other/contact.html">Contact</a>
+        <a class="nav-link mr-3" href="other/signin.html">Sign In</a>
+      </div>
+    </div>
+</nav>
+<!-- header ended -->
+
+<!-- main started here -->
+<section>
+ <div class="maincontent img-fluid">
+  
+    <h1 id="fingerstrike" class="text-center">Finger Strike</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <a href="other/typing.html"><button id="startnow" class="btn btn-success">Starts Now</button></a>
+            <h2>Boost Your Productivity Through Typing</h2>
+            <h3 class="mb-5 mt-5">Measure Your Words per Minute</h3>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <!-- the login form -->
+            <div class="container py-5 h-100">
+              <div class="row d-flex align-items-center justify-content-center h-100">
+              
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1" id="theloginform" >
+                    <form  action="" onsubmit=" return validateForm()" >
+                    <!-- Email input -->
+                    <h1 class="text-center text-capitalize text-white mb-2 ">sign Up</h1>
+            
+                    <div class="form-outline mb-4">
+                      <label class="form-label text-white" for="form1Example13">Email Id</label>
+                      <input type="email" placeholder="Enter email id" autofocus autocapitalize="off" id="form1Example13" class="form-control form-control-lg" name="email" />
+                    </div>
+                    
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <label class="form-label text-white" for="form1Example23">Password</label>
+                      <input type="password" placeholder="Enter password" autofocus autocapitalize="off" id="form1Example23" class="form-control form-control-lg" name="pass" />
+                    </div>
+                    
+                    <div class="d-flex justify-content-around align-items-center mb-4">
+                      <!-- Checkbox -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                        <label class="form-check-label text-white" for="form1Example3"> Remember me </label>
+                      </div>
+                      <a href="#!">Forgot password?</a>
+                    </div>
+                    
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                    <a href="other/signin.html" id="createaccount" class=" text-danger pl-5 pt-3">Create Account</a>
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+    </div>
+   
+</div>
+
+</section>
+    
+<!-- main started here -->
+
+
+<!-- the foooter is started here  -->
+<section id="footer">  
+  <div class="container">  
+      <div class="row text-center text-xs-center text-sm-left text-md-left">  
+          <div class="col-xs-12 col-sm-4 col-md-4">  
+              <h5> Contact Us </h5>  
+              <ul class="list-unstyled quick-links">  
+                  <p><b>Address : </b> 165, Railway Lines, · Saat Rasta, Solapur - 413001 · Post Box No. 52 </p>
+                  <p><b>phone :</b> +91-9146040203</p>
+                  <p><b>Timing :</b> 09.00 A.M. TO 06.00 P.M.  mon-sat</p>
+              </ul>  
+          </div> 
+          <hr> 
+          <div class="col-xs-12 col-sm-4 col-md-4">  
+              <h5> About Us </h5>  
+              <ul class="list-unstyled quick-links">  
+                  <li> <a href="#">  Home </a> </li>  
+                  <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a> </li>  
+                  <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Register </a> </li> 
+                  <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Our Services </a> </li>  
+              </ul>  
+          </div>  
+          <hr class="text-center text-white">
+          <div class="col-xs-12 col-sm-4 col-md-4">  
+              <h5> Our features </h5>  
+              <ul class="list-unstyled quick-links thefeatures">  
+            
+                  <ul>
+                      <li>Timed Typing Tests</li>
+                      <li>Real-time Speed Calculation</li>
+                      <li>Accuracy Tracking</li>
+                      <li>Progress History</li>
+                      <li>User Profiles</li>
+                  </ul>
+              </ul>  
+          </div>  
+      </div>  
+      <div class="row">  
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">  
+              <p class="h6"> 2024 ? All right Reversed. @DharmannaAivale..&PradeepYamade..</p>  
+          </div>  
+          <hr>  
+      </div>      
+  </div>  
+</section>
+
+<script>
+    function validateForm() {
+        var email = document.getElementById("form1Example13").value;
+        var password = document.getElementById("form1Example23").value;
+
+        if (email.trim() === "" || password.trim() === "") {
+            alert("Please fill in all fields.");
+            return false; // Prevent form submission
+        }
+
+        return true; // Allow form submission
+    }
+
+</script>
+
+
+<script src="javascript/index.js"></script>
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

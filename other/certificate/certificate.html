@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Certificate</title>
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: green;
+        }
+
+        .edit {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            color: white;
+            font-size: 30px;
+            font-weight: 900;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            color: white;
+            font-size: 30px;
+            font-weight: 900;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        label {
+            margin-top: 40px;
+            color: red;
+            font-size: 30px;
+            font-weight: 900;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        input {
+            padding: 15px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border-radius: 30px;
+            font-size: 20px;
+            background-color: aqua;
+            color: black;
+            text-shadow: 1px 1px 2px white;
+        }
+
+        #submitBtn {
+            font-size: 20px;
+            font-weight: 900;
+            padding: 15px;
+            border-radius: 20px;
+            text-shadow: 1px 1px 2px black;
+            background-color: lightseagreen;
+            cursor: not-allowed; /* Initially disable the button */
+        }
+
+        #submitBtn:enabled {
+            cursor: pointer; /* Enable the button when it's allowed */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="edit">
+        <div>
+            <header>
+                <h4>Get your certificate </h4>
+                <h1> Finger Strike </h1>
+            </header>
+            <main>
+                <label for="name">Type Your Name</label><br>
+                <input required type="text" name="Name" autocomplete="name" placeholder="Your Name" id="name" minlength="3"
+                    maxlength="34" oninput="toggleButton()"><br>
+                <Button id="submitBtn" onclick="CFire()" disabled>Get Certificate</Button>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function CFire() {
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Certificate Downloaded Successfully!",
+                showCloseButton: true,
+                showConfirmButton: true,
+            });
+        }
+
+        function toggleButton() {
+            var nameInput = document.getElementById('name').value;
+            var submitBtn = document.getElementById('submitBtn');
+
+            // Enable the button if the input is not empty, disable it otherwise
+            submitBtn.disabled = nameInput.trim() === "";
+        }
+    </script>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
